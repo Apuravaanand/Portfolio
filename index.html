@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Single Page</title>
+
+  <!--fontawsem cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!--email api-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- auto text -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><i class="fa-brands fa-digg"></i></div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+
+
+      <li>
+        <a href="javascript:void(0)" onclick="toggleSubmenu('aboutSub', 'servicesCheck')">
+          About <i class="fa-regular fa-circle-check check-icon" id="servicesCheck"></i>
+        </a>
+        <ul class="submenu" id="aboutSub">
+          <li><a href="#">Developer</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Our team</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)" onclick="toggleSubmenu('servicesSub', 'servicesCheck')">
+          Services <i class="fa-regular fa-circle-check check-icon" id="servicesCheck"></i>
+        </a>
+        <ul class="submenu" id="servicesSub">
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">UI Design</a></li>
+          <li><a href="#">API Queries</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="javascript:void(0)" onclick="toggleSubmenu('contactSub', 'contactCheck')">
+          Contact <i class="fa-regular fa-circle-check check-icon" id="contactCheck"></i>
+        </a>
+        <ul class="submenu" id="contactSub">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Whatsapp</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="landing" class="main-page">
+    <div class="main-page">
+      <div class="left first">
+        <img src="store/main.gif" alt="" height="350px" width="350px">
+      </div>
+      <div class="right first">
+        <h2>Hey there!!</h2>
+        <h1>I'm <span class="auto-text"></span></h1>
+        <h3>Student at <span class="University">Tezpur University</span>, Napaam | Assam</h3>
+        <div class="btns">
+          <button class="btn1"><a href="#queries">Contact me</a></button>
+          <button class="btn1"><a href="#about">About me</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section alt">
+    <div class="about-content">
+      <div class="left-sec baby">
+        <div class="abuot-img">
+          <img src="store/about1.jpg" alt="">
+        </div>
+        <div class="counts">
+          <div class="count-container">
+            <h2>Clients</h2>
+            <h2><span class="counter-client">0</span></h2>
+          </div>
+          <div class="count-container">
+            <h2>Projects</h2>
+            <span class="counter-project">0</span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="right-sec baby">
+        <h2>About our Company</h2>
+        <p>At Endurance, we specialize in building powerful, responsive, and scalable web solutions tailored to your
+          unique business needs. With a focus on modern technologies like the MERN stack (MongoDB, Express.js, React,
+          and Node.js), we craft seamless digital experiences that help businesses thrive in a fast-paced digital world.
+          <br>
+          Whether you're a startup looking for a stunning landing page or an established brand in need of a full-stack
+          web application, our team is committed to delivering performance-driven, user-focused websites with precision
+          and reliability. At Endurance, we don’t just build websites. <br>— we build digital foundations that last.
+        </p>
+        <br><br>
+        <div class="rating">
+          <h4>Rate us our website</h4>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="heading-services">
+      <h2 class="services-heading">Services we Provided</h2>
+    </div>
+    <div class="parent">
+      <div class="child">
+        <i class="fa-solid fa-code"></i>
+        <h4>Built WEB-Pages</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+      <div class="child">
+        <i class="fa-solid fa-server"></i>
+        <h4>MERN Stack</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+      <div class="child">
+        <i class="fa-solid fa-code-pull-request"></i>
+        <h4>API Queries</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+      <div class="child">
+        <i class="fa-solid fa-wrench"></i>
+        <h4>Custom Tools</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+      <div class="child">
+        <i class="fa-solid fa-code"></i>
+        <h4>Responsive UI</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+      <div class="child">
+        <i class="fa-solid fa-code"></i>
+        <h4>Maintenance</h4>
+        <p>we make a responsive web-page</p>
+        <button><a href="#" class="btn">Endore Now</a></button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="queries" id="queries">
+    <h2 class="queries-heading">Ask any thing about Our services</h2>
+    <h4 class="sub-queries-heading">we are here to solve any types of technical queries, design a Website and maintain
+      for you.</h4>
+
+    <div class="contect-form" id="myform">
+      <h1 class="cont-heading">Contect Form</h1>
+      <div class=" form-group">
+        <label for="">Your Name</label>
+        <input type="text" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="">Your Email</label>
+        <input type="email" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="">Subject</label>
+        <input type="text" id="subject" placeholder="Subject : Regarding the Web-Design">
+      </div>
+      <div class="form-group">
+        <label for="">Message</label>
+        <textarea id="message" placeholder="Put the Message and await for response"></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submitbtn">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" class="section alt">
+    <div class="content-team">
+      <h2 class="team-heading">Our Team</h2>
+      <h4 class="team-heading-sub">We have Numbers of professional people to solve your queries.</h4>
+    </div>
+    <div class="team">
+      <div class="people">
+        <img src="store/dev1.jpg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>Apurava Anand</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <img src="store/dev2.jpeg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>No Developer</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <img src="store/dev2.jpeg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>No Developer</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <img src="store/dev2.jpeg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>No Developer</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <img src="store/dev2.jpeg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>No Developer</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="people">
+        <img src="store/dev2.jpeg" alt="" height="150px" width="150px">
+        <div class="about-team">
+          <h3>No Developer</h3>
+          <h4>Mern Stack Developer</h4>
+          <h6>Artist is a team applied to a person who engaged in an activity deemed to be an art.</h6>
+          <ul class="media-developer">
+            <li class="insta"><i class="fa-brands fa-square-instagram"></i></li>
+            <li class="email"><i class="fa-solid fa-square-envelope"></i></li>
+            <li class="lindin"><i class="fa-brands fa-linkedin"></i></li>
+            <li class="twitter"><i class="fa-brands fa-square-x-twitter"></i></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>Author - Apurava Anand Singh.</p>
+  </footer>
+
+
+
+
+  <!-- javascript file -->
+  <script src="app.js"></script>
+</body>
+
+</html>
