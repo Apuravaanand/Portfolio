@@ -1,7 +1,7 @@
 # 👨‍💻 Apurava Anand – Portfolio
 
 🚀 **Live Preview**:  
-🌐 [Click here to view the website](https://apuravaanand.github.io/Portfolio/)
+🌐 [Click here to view the website]()
 
 ---
 
