@@ -1,45 +1,59 @@
-# 👨‍💻 Apurava Anand – Portfolio
+<h1 align="center">🚀 Apurava Anand – Portfolio Website</h1>
 
-🚀 **Live Preview**:  
-🌐 [Click here to view the website](https://apuravaanand.github.io/Portfolio/)
-
----
-
-## 📁 About the Project
-
-Welcome to my **personal portfolio website**!  
-This site showcases my skills, projects, and achievements as a web developer and tech enthusiast. It's designed with love using **HTML**, **CSS**, and **JavaScript**.  
-
----
-
-## 🧰 Tech Stack
-
-| 💡 Frontend | 🎨 Styling | 🛠️ Tools |
-|------------|------------|-----------|
-| HTML5       | CSS3       | VS Code |
-| JavaScript  | Flexbox/Grid | Git & GitHub |
-| Responsive Design |  | Live Server |
+<p align="center">
+  <a href="https://apuravaanand.github.io/Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/Live-Demo-00C853?style=for-the-badge&logo=github&logoColor=white" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/Apuravaanand/Portfolio/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/Apuravaanand/Portfolio?style=for-the-badge&color=FFD700" alt="GitHub stars"/>
+  </a>
+  <a href="https://github.com/Apuravaanand/Portfolio/network/members" target="_blank">
+    <img src="https://img.shields.io/github/forks/Apuravaanand/Portfolio?style=for-the-badge&color=00B0FF" alt="GitHub forks"/>
+  </a>
+</p>
 
 ---
 
-## 🔥 Features
+## 🎨 About
 
-- ✅ Smooth navigation & responsive layout
-- ✅ Creative landing page
-- ✅ About, Projects, Services & Contact sections
-- ✅ Clean UI with modern CSS animations
+Welcome to my personal portfolio website – a digital space to showcase my skills, experience, and projects.  
+It's built with **passion for design and web development** using clean HTML, CSS, and JavaScript.
 
 ---
 
-## 📸 Preview
+## 🛠 Tech Stack & Tools
 
-![Portfolio Screenshot](https://user-images.githubusercontent.com/00000000/your-screenshot.png) <!-- Add your own screenshot URL here -->
+<div align="center">
+  
+| Language / Tools | Icons |
+|------------------|--------|
+| **HTML5** | <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> |
+| **CSS3** | <img src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> |
+| **JavaScript** | <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/> |
+| **Visual Studio Code** | <img src="https://img.shields.io/badge/-VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/> |
+| **Git & GitHub** | <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/> |
+| **Live Server** | <img src="https://img.shields.io/badge/-Live_Server-F05032?style=for-the-badge&logo=visual-studio-code&logoColor=white"/> |
+
+</div>
 
 ---
 
-## 📌 How to Use Locally
+## ✨ Features
 
-```bash
-git clone https://github.com/Apuravaanand/Portfolio.git
-cd Portfolio
-# Open index.html in your browser
+- 🔹 Smooth scrolling and clean responsive layout
+- 🔹 Well-structured sections (About, Projects, Services, Contact)
+- 🔹 Built with only HTML, CSS, JS — no frameworks
+- 🔹 Mobile-friendly design
+- 🔹 Eye-catching animations & icons
+
+---
+
+## 💻 Preview
+
+> 🖼 Add a screenshot of your website below for visual appeal  
+> *(You can upload one in your repo or use an image URL)*
+
+```html
+<!-- Markdown example for image -->
+![Website Screenshot](https://your-screenshot-url-here.png)
+
