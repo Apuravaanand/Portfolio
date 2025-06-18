@@ -294,7 +294,9 @@ footer {
   .about-content {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
+  
 
   .people {
     flex-direction: column;
@@ -414,62 +416,49 @@ h1 {
   padding: 0;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: #0435a6;
-  padding: 20px 10px;
+.about-content{
+  margin: auto 0;
+  height: 100%;
   width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 50px 30px;
   gap: 30px;
 }
 
-.abuot-img img {
-  background-position: center;
-  object-fit: cover;
-  height: 350px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.baby {
-  width: 50%;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  min-height: 450px;
-}
-
-.left-sec {
+.left-sec , .right-sec{
+  padding: 15px;
+  flex: 1;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.counts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  
+}
+
+.count-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-.counts {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: rgb(0, 0, 0);
-  padding: 20px;
-  margin-bottom: 20px;
+.rating{
+  align-items: start;
 }
 
-.counter-client {
-  font-size: 29px;
-}
 
-.counter-project {
-  font-size: 29px;
-}
 
-.count h1 {
-  font-size: 30px;
-}
-
-.right-sec {
-  padding: 10px 15px;
-  text-align: justify;
-}
 
 #services {
   height: 100%;
